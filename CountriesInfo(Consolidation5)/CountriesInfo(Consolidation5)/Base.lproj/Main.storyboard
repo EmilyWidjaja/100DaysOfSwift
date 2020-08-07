@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RVq-bJ-ELf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zmk-VF-zFT">
+            <objects>
+                <tableViewController id="F25-ka-9wW" customClass="ViewController" customModule="CountriesInfo_Consolidation5_" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="n2e-7g-d6n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Country" textLabel="vTW-GA-NH6" style="IBUITableViewCellStyleDefault" id="NgG-5g-1Kr">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NgG-5g-1Kr" id="ldw-pF-6Lu">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vTW-GA-NH6">
+                                            <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="F25-ka-9wW" id="Buj-Bg-f1n"/>
+                            <outlet property="delegate" destination="F25-ka-9wW" id="HbZ-Zv-vPz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Wj1-Ea-cn9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MmF-d2-C5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.75362318840587" y="138.61607142857142"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="m1q-IF-6W6">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="GSt-Q8-QJX" customClass="DetailViewController" customModule="CountriesInfo_Consolidation5_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Detail" id="Rcn-Ky-59J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sg8-3S-RVS">
+                                <rect key="frame" x="64" y="217" width="75" height="27"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official Language(s): " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUb-L5-TZi">
+                                <rect key="frame" x="64" y="324" width="211" height="27"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area (km/^2):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afR-E8-bIC">
+                                <rect key="frame" x="64" y="431" width="133" height="27"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ur1-cQ-YTb">
+                                <rect key="frame" x="64" y="538" width="111" height="27"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GDP Per Capita (2020):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-Ph-Xy2">
+                                <rect key="frame" x="64" y="645" width="236" height="27"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5b-xI-pet">
+                                <rect key="frame" x="176" y="370" width="62" height="31"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vl5-0q-now">
+                                <rect key="frame" x="176" y="477" width="62" height="31"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXc-yx-TY3">
+                                <rect key="frame" x="176" y="584" width="62" height="31"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU1-qY-LIQ">
+                                <rect key="frame" x="176" y="691" width="62" height="31"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlh-p5-OCq">
+                                <rect key="frame" x="176" y="265" width="62" height="31"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="r5b-xI-pet" firstAttribute="centerX" secondItem="nlh-p5-OCq" secondAttribute="centerX" id="06V-fV-khg"/>
+                            <constraint firstItem="KU1-qY-LIQ" firstAttribute="centerX" secondItem="VXc-yx-TY3" secondAttribute="centerX" id="57p-XA-sNs"/>
+                            <constraint firstItem="KU1-qY-LIQ" firstAttribute="top" secondItem="N92-Ph-Xy2" secondAttribute="bottom" constant="19" id="9rA-os-c1t"/>
+                            <constraint firstItem="Vl5-0q-now" firstAttribute="centerX" secondItem="r5b-xI-pet" secondAttribute="centerX" id="AHv-j4-KLJ"/>
+                            <constraint firstItem="afR-E8-bIC" firstAttribute="top" secondItem="lUb-L5-TZi" secondAttribute="bottom" constant="80" id="DXN-Xq-XYj"/>
+                            <constraint firstItem="ur1-cQ-YTb" firstAttribute="leading" secondItem="wBe-bJ-4Ht" secondAttribute="leading" constant="64" id="FV4-XE-BAN"/>
+                            <constraint firstItem="nlh-p5-OCq" firstAttribute="centerX" secondItem="Rcn-Ky-59J" secondAttribute="centerX" id="JZ1-BJ-ATL"/>
+                            <constraint firstItem="nlh-p5-OCq" firstAttribute="top" secondItem="wBe-bJ-4Ht" secondAttribute="top" constant="221" id="KhS-q7-SOF"/>
+                            <constraint firstItem="lUb-L5-TZi" firstAttribute="top" secondItem="nlh-p5-OCq" secondAttribute="bottom" constant="28" id="KwF-O5-ZZ7"/>
+                            <constraint firstItem="lUb-L5-TZi" firstAttribute="leading" secondItem="wBe-bJ-4Ht" secondAttribute="leading" constant="64" id="TqV-E9-HWo"/>
+                            <constraint firstItem="N92-Ph-Xy2" firstAttribute="leading" secondItem="wBe-bJ-4Ht" secondAttribute="leading" constant="64" id="Umv-hX-5bX"/>
+                            <constraint firstItem="VXc-yx-TY3" firstAttribute="top" secondItem="ur1-cQ-YTb" secondAttribute="bottom" constant="19" id="Uqh-g4-qT8"/>
+                            <constraint firstItem="r5b-xI-pet" firstAttribute="top" secondItem="lUb-L5-TZi" secondAttribute="bottom" constant="19" id="X10-Ts-ih4"/>
+                            <constraint firstItem="N92-Ph-Xy2" firstAttribute="top" secondItem="ur1-cQ-YTb" secondAttribute="bottom" constant="80" id="X3l-w0-yRR"/>
+                            <constraint firstItem="ur1-cQ-YTb" firstAttribute="top" secondItem="afR-E8-bIC" secondAttribute="bottom" constant="80" id="ZyG-YM-U9b"/>
+                            <constraint firstItem="Sg8-3S-RVS" firstAttribute="top" secondItem="wBe-bJ-4Ht" secondAttribute="top" constant="173" id="aSI-jw-NeU"/>
+                            <constraint firstItem="Vl5-0q-now" firstAttribute="top" secondItem="afR-E8-bIC" secondAttribute="bottom" constant="19" id="gzX-7j-b8c"/>
+                            <constraint firstItem="Sg8-3S-RVS" firstAttribute="leading" secondItem="wBe-bJ-4Ht" secondAttribute="leading" constant="64" id="iBc-DU-aEK"/>
+                            <constraint firstItem="afR-E8-bIC" firstAttribute="leading" secondItem="wBe-bJ-4Ht" secondAttribute="leading" constant="64" id="jAX-yL-MMf"/>
+                            <constraint firstItem="VXc-yx-TY3" firstAttribute="centerX" secondItem="Vl5-0q-now" secondAttribute="centerX" id="n1t-u2-wIu"/>
+                            <constraint firstItem="lUb-L5-TZi" firstAttribute="top" secondItem="Sg8-3S-RVS" secondAttribute="bottom" constant="80" id="zHi-tm-mCL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wBe-bJ-4Ht"/>
+                    </view>
+                    <connections>
+                        <outlet property="areaLabel" destination="Vl5-0q-now" id="8U1-Hr-m7X"/>
+                        <outlet property="capitalLabel" destination="nlh-p5-OCq" id="AXz-ra-bbT"/>
+                        <outlet property="gdpLabel" destination="KU1-qY-LIQ" id="AbD-cx-i0L"/>
+                        <outlet property="languagesLabel" destination="r5b-xI-pet" id="cXh-kw-peP"/>
+                        <outlet property="populationLabel" destination="VXc-yx-TY3" id="kwY-Gb-eRu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cvg-cs-tTs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1785.5072463768117" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xZm-g9-D4V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RVq-bJ-ELf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PSD-Tj-YUy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="F25-ka-9wW" kind="relationship" relationship="rootViewController" id="bQF-ie-XVw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2C-Ma-ln1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

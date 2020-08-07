@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Singapore",
+    "capital": "Singapore",
+    "officialLanguages": "English, Malay, Tamil, Mandarin",
+    "area": 725.7,
+    "population": "5.7 million",
+    "GDPPerCapita": 107604
+  },
+  {
+    "name": "Malaysia",
+    "capital": "Kuala Lumpur",
+    "officialLanguages": "Malay",
+    "area": 330800,
+    "population": "32.7 million",
+    "GDPPerCapita": 34567
+  },
+  {
+    "name": "Italy",
+    "capital": "Rome",
+    "officialLanguages": "Italian",
+    "area": 301340,
+    "population": "60.3 million",
+    "GDPPerCapita": 40470
+  },
+  {
+    "name": "Thailand",
+    "capital": "Bangkok",
+    "officialLanguages": "Thai",
+    "area": 513120,
+    "population": "69.8 million",
+    "GDPPerCapita": 20474
+  },
+  {
+    "name": "Vietnam",
+    "capital": "Hanoi",
+    "officialLanguages": "Vietnamese",
+    "area": 331212,
+    "population": "96.2 million",
+    "GDPPerCapita": 8066
+  },
+  {
+    "name": "United Arab Emirates",
+    "capital": "Abu Dhabi",
+    "officialLanguages": "Arabic",
+    "area": 83600,
+    "population": "9.9 million",
+    "GDPPerCapita": 41476
+  },
+  {
+    "name": "Denmark",
+    "capital": "Copenhagen",
+    "officialLanguages": "Danish, Faroese, Greenlandic, German",
+    "area": 2220940,
+    "population": "5.8 million",
+    "GDPPerCapita": 51643
+  },
+  {
+    "name": "United Kingdom",
+    "capital": "London",
+    "officialLanguages": "English",
+    "area": 242495,
+    "population": "67.9 million",
+    "GDPPerCapita": 41030
+  }
+]
