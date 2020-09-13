@@ -11,16 +11,31 @@ import MobileCoreServices
 
 class ActionViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var script: UITextView!
+    
+    var pageTitle = ""
+    var pageURL = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        //extensionContext controls the data from parent app. inputItems is data from parent app.
+        
+        //create bar button item to call done
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
+        
+        //talks to extension and updates UI w/ URL & Title
         if let inputItem = extensionContext?.inputItems.first as? NSExtensionItem {
             if let itemProvider = inputItem.attachments?.first {    //pulls out first item that shared with us
                 itemProvider.loadItem(forTypeIdentifier: kUTTypePropertyList as String) { [weak self] (dict, error) in  //loadItem - tells itemProvider to actually load the first item
-                    //handler to do stuff
+                    guard let itemDictionary = dict as? NSDictionary else { return }
+                    guard let javaScriptValues = itemDictionary[NSExtensionJavaScriptPreprocessingResultsKey] as? NSDictionary else {return} //gets code from extension?
+                    
+                    //update UI with values
+                    self?.pageTitle = javaScriptValues["title"] as? String ?? ""
+                    self?.pageURL = javaScriptValues["URL"] as? String ?? ""
+                    
+                    DispatchQueue.main.async {
+                        self?.title = self?.pageTitle
+                    }
                     
                 }
             }
@@ -28,9 +43,20 @@ class ActionViewController: UIViewController {
     }
 
     @IBAction func done() {
-        // Return any edited content to the host app.
-        // This template doesn't do anything, so we just echo the passed in items.
-        self.extensionContext!.completeRequest(returningItems: self.extensionContext!.inputItems, completionHandler: nil)
+        //passes back the text user entered into text view
+        //TODO: FIx code
+        let item = NSExtensionItem()
+        if script.text == nil {
+            
+            print("no text found!")
+            return
+        }
+            let argument: NSDictionary = ["customJavaScript": script.text]
+            let webDictionary: NSDictionary = [NSExtensionJavaScriptFinalizeArgumentKey: argument]
+            let customJavaScript = NSItemProvider(item: webDictionary, typeIdentifier: kUTTypePropertyList as String)
+            item.attachments = [customJavaScript]
+            extensionContext?.completeRequest(returningItems: [item])
+        
     }
 
 }
