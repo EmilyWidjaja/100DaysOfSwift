@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA0C65F02508E23A00E5B87B /* RoutinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C65EF2508E23A00E5B87B /* RoutinesModel.swift */; };
+		BA0C65F22508E25600E5B87B /* Routines.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C65F12508E25600E5B87B /* Routines.swift */; };
+		BA0C65F42508E28D00E5B87B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C65F32508E28D00E5B87B /* Extensions.swift */; };
+		BA19B541250BAF3900E7F01E /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA19B540250BAF3900E7F01E /* TimerViewController.swift */; };
 		BA41132F24AE086300403B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41132E24AE086300403B54 /* AppDelegate.swift */; };
 		BA41133124AE086300403B54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41133024AE086300403B54 /* SceneDelegate.swift */; };
 		BA41133324AE086300403B54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41133224AE086300403B54 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA0C65EF2508E23A00E5B87B /* RoutinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesModel.swift; sourceTree = "<group>"; };
+		BA0C65F12508E25600E5B87B /* Routines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routines.swift; sourceTree = "<group>"; };
+		BA0C65F32508E28D00E5B87B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BA19B540250BAF3900E7F01E /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		BA41132B24AE086300403B54 /* hiit IT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hiit IT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA41132E24AE086300403B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA41133024AE086300403B54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,12 +68,16 @@
 			children = (
 				BA41132E24AE086300403B54 /* AppDelegate.swift */,
 				BA41133024AE086300403B54 /* SceneDelegate.swift */,
-				BA41133224AE086300403B54 /* ViewController.swift */,
 				BA41133424AE086300403B54 /* Main.storyboard */,
+				BA41133224AE086300403B54 /* ViewController.swift */,
+				BA19B540250BAF3900E7F01E /* TimerViewController.swift */,
 				BAD0FDFD24AE31BE00D2115F /* SummaryViewController.swift */,
 				BA41133724AE086400403B54 /* Assets.xcassets */,
 				BA41133924AE086500403B54 /* LaunchScreen.storyboard */,
 				BA41133C24AE086500403B54 /* Info.plist */,
+				BA0C65EF2508E23A00E5B87B /* RoutinesModel.swift */,
+				BA0C65F12508E25600E5B87B /* Routines.swift */,
+				BA0C65F32508E28D00E5B87B /* Extensions.swift */,
 			);
 			path = "hiit IT";
 			sourceTree = "<group>";
@@ -143,8 +155,12 @@
 			files = (
 				BA41133324AE086300403B54 /* ViewController.swift in Sources */,
 				BA41132F24AE086300403B54 /* AppDelegate.swift in Sources */,
+				BA0C65F22508E25600E5B87B /* Routines.swift in Sources */,
 				BA41133124AE086300403B54 /* SceneDelegate.swift in Sources */,
+				BA19B541250BAF3900E7F01E /* TimerViewController.swift in Sources */,
 				BAD0FDFE24AE31BE00D2115F /* SummaryViewController.swift in Sources */,
+				BA0C65F02508E23A00E5B87B /* RoutinesModel.swift in Sources */,
+				BA0C65F42508E28D00E5B87B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
